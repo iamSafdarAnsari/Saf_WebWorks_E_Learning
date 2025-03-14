@@ -1,0 +1,166 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+/* Main Container */
+.main {
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.icon .logo {
+  color: #ff7200;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  margin-left: 50px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.menu ul li a:hover {
+  color: #ff7200;
+}
+
+/* Search Bar */
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.srch {
+  width: 200px;
+  height: 40px;
+  border: none;
+  padding: 10px;
+  background: transparent;
+  border-bottom: 2px solid #ff7200;
+  color: white;
+  outline: none;
+}
+
+.btn {
+  background-color: #ff7200;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #ff7200;
+}
+
+/* Content */
+.content {
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.content h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.content p {
+  margin: 20px 0;
+}
+
+.content button a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Courses Section */
+.Courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 10px;
+}
+
+/* Box Section */
+.box {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Styling */
+.box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Button Styling */
+.box button {
+  background: #ff7200;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.box button:hover {
+  background: #e65c00;
+}

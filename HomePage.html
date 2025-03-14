@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Learning Saf WebWorks</title>
+    <link rel="stylesheet" href="HomePage.css" />
+    <script>
+      function redirectToPage(page) {
+        window.location.href = page;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="main">
+      <!-- Navbar Section -->
+      <div class="navbar">
+        <div class="icon">
+          <h2 class="logo">Saf WebWorks</h2>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">DESIGN</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <input class="srch" type="search" placeholder="Type To Text" />
+          <button class="btn">Search</button>
+        </div>
+      </div>
+      <hr />
+      <!-- Content Section -->
+      <div class="content">
+        <h1>Web Design & Development Course</h1>
+        <p class="par">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quod
+          iste rerum<br />
+          aperiam, in hic itaque fugiat necessitatibus ad sapiente earum ipsa
+          libero<br />
+          minima cumque non, esse sint omnis pariatur?
+        </p>
+        <button class="btn"><a href="#">JOIN US</a></button>
+      </div>
+    </div>
+
+    <div class="Courses">
+      <section class="box" id="ci-cd">
+        <img src="image/ci-cd.jpg" alt="CI/CD & Automation" />
+        <h2>CI/CD & Automation</h2>
+        <p>Automate testing, deployments, and improve development workflows.</p>
+        <button onclick="redirectToPage('ci-cd.html')">Learn More</button>
+      </section>
+
+      <section class="box" id="hosting">
+        <img src="image/Hosting.jpg" alt="Hosting & Deployment" />
+        <h2>Hosting & Deployment</h2>
+        <p>Deploy your projects using GitHub Pages and hosting services.</p>
+        <button onclick="redirectToPage('hosting.html')">Learn More</button>
+      </section>
+
+      <section class="box" id="github">
+        <img src="image/github.jpg" alt="Learn with GitHub" />
+        <h2>Mastering Git & GitHub</h2>
+        <p>Deploy your projects using GitHub Pages and hosting services.</p>
+        <button onclick="redirectToPage('LearnGithub.html')">Learn More</button>
+      </section>
+    </div>
+  </body>
+</html>

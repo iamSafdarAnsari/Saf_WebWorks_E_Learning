@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn GitHub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+      header {
+        background: #24292e;
+        color: white;
+        padding: 20px;
+        font-size: 24px;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+      }
+      .box {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 15px;
+        padding: 20px;
+        width: 300px;
+        transition: transform 0.3s;
+      }
+      .box:hover {
+        transform: scale(1.05);
+      }
+      .box img {
+        width: 250px;
+        height: 150px;
+      }
+      button {
+        background: #24292e;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      button:hover {
+        background: #0366d6;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🚀 Learn GitHub</h1>
+      <p>Your ultimate guide to mastering GitHub</p>
+    </header>
+
+    <div class="container">
+      <section class="box" id="version-control">
+        <img src="image/VersionControl.jpg" alt="Version Control" />
+        <h2>Version Control & Code Management</h2>
+        <p>Track changes, rollback versions, and organize code efficiently.</p>
+        <button onclick="showAlert('Version Control')">Learn More</button>
+      </section>
+
+      <section class="box" id="team-collaboration">
+        <img src="image/TeamCollaboration.jpg" alt="Team Collaboration" />
+        <h2>Team Collaboration</h2>
+        <p>Work seamlessly with your team using branches and pull requests.</p>
+        <button onclick="showAlert('Team Collaboration')">Learn More</button>
+      </section>
+
+      <section class="box" id="open-source">
+        <img
+          src="image/OpenSourceContribution.jpg"
+          alt="Open Source Contribution"
+        />
+        <h2>Open Source Contribution</h2>
+        <p>
+          Contribute to projects, fix bugs, and improve existing repositories.
+        </p>
+        <button onclick="showAlert('Open Source Contribution')">
+          Learn More
+        </button>
+      </section>
+
+      <section class="box" id="ci-cd">
+        <img src="image/ci-cd.jpg" alt="CI/CD & Automation" />
+        <h2>CI/CD & Automation</h2>
+        <p>Automate testing, deployments, and improve development workflows.</p>
+        <button onclick="showAlert('CI/CD & Automation')">Learn More</button>
+      </section>
+
+      <section class="box" id="hosting">
+        <img src="image/Hosting.jpg" alt="Hosting & Deployment" />
+        <h2>Hosting & Deployment</h2>
+        <p>Deploy your projects using GitHub Pages and hosting services.</p>
+        <button onclick="showAlert('Hosting & Deployment')">Learn More</button>
+      </section>
+      <section class="box" id="github">
+        <img src="image/github.jpg" alt="Learn with GitHub" />
+        <h2>GitHub Guide</h2>
+        <p>Deploy your projects using GitHub Pages and hosting services.</p>
+        <button onclick="redirectToPage('github.html')">Learn More</button>
+      </section>
+    </div>
+
+    <script>
+      function showAlert(topic) {
+        alert("More information about " + topic + " is coming soon!");
+      }
+      function redirectToPage(page) {
+        window.location.href = page;
+      }
+    </script>
+  </body>
+</html>
